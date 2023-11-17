@@ -133,8 +133,18 @@ getInstruction("mashedPotatoes", 0, (step1) => {
 
   // Iteration 3 using async/await
 
-  async function makeBroccoli() {
-    try {
+  /*let step = 0;
+    function obtainInstruction() {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          if (!directions[step]) reject("Instructions not found.");
+          else resolve();
+        });
+        // }, 2000);
+      });
+    }
+
+    async function makeBroccoli() {
       await obtainInstruction(0);
       await obtainInstruction(1);
       await obtainInstruction(2);
@@ -144,10 +154,10 @@ getInstruction("mashedPotatoes", 0, (step1) => {
       await obtainInstruction(6);
       await obtainInstruction(7);
       await obtainInstruction(8);
-    } catch (error) {
-      console.error("An error occurred", error);
     }
-  }
+
+    console.error("An error occurred", error);
+  }*/
 
   // ...
 
